@@ -1,42 +1,36 @@
-ai , bi = input().split()
-ci,di =  input().split()
+ai, bi = input().split()
+ci, di = input().split()
 t = int(input())
 
 a, b = int(ai), int(bi)
-
 c, d = int(ci), int(di)
 
 Distance = 0
 Difference = 0
 # Vertical
-
-if a > c:
+if a>c:
   Distance += a - c
 else:
   Distance += c - a
 
-# Horizontal 
 
+# Horizontal 
 if b>d:
   Distance += b - d
 else:
   Distance += d - b
+
 if t == Distance:
   print("Y")
 else:
   if (t>Distance):
     Difference = t - Distance 
+    
+    if (Difference % 2 == 0):
+      print ("Y")
+      
+    else:
+      print ("N")
+  
   else: 
-    Difference = Distance - t
-  if (Difference % 2 == 0):
-    print ("Y")
-  else:
-    print ("N")
-
-
-
-# -138 - 825
-
-# 258 # 130
-
-# 8358
+    print("N")

@@ -1,4 +1,4 @@
-#made by mohammed
+
 p= int(input())
 n= int(input)
 r=int(input())

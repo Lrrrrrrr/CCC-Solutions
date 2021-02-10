@@ -1,3 +1,4 @@
+#made by mohammed
 amount = int(input())
 player1 = 100
 player2 = 100

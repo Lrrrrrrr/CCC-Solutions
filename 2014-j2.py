@@ -1,3 +1,4 @@
+#made by mohammed
 amnt = int(input())
 votes = input()
 
